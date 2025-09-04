@@ -8,26 +8,26 @@ export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<nav className="bg-cream shadow-md fixed w-full z-50">
+		<nav className="bg-coffee shadow-md fixed w-full z-50">
 			<div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 				{/* Logo */}
-				<Link href="/" className="text-xl font-bold text-black">
+				<Link href="/" className="text-xl font-bold text-white">
 					MyPortfolio
 				</Link>
 
 				{/* Desktop Menu */}
 				<div className="hidden md:flex space-x-6">
-					<Link href="/" className="text-black hover:text-forest transition">
+					<Link href="/" className="text-white hover:text-raffia transition">
 						Home
 					</Link>
-					<Link href="/resume" className="text-black hover:text-forest transition">
+					<Link href="/resume" className="text-white hover:text-raffia transition">
 						Profile
 					</Link>
-					<Link href="/projects" className="text-black hover:text-forest transition">
+					<Link href="/projects" className="text-white hover:text-raffia transition">
 						Projects
 					</Link>
-					<Link href="/contact" className="text-black hover:text-forest transition">
-						Contact
+					<Link href="/contact" className="text-white hover:text-raffia transition">
+						Connect
 					</Link>
 				</div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
 						onClick={() => setIsOpen(false)}
 						className="block text-gray-200 hover:text-white transition"
 					>
-						Contact
+						Connect
 					</Link>
 				</div>
 			)}

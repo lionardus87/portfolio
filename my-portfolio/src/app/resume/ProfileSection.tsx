@@ -8,22 +8,24 @@ export default function ProfileSection() {
 		<>
 			{/* Personal info */}
 			<section>
-				<div className="bg-sand mx-auto  shadow-lg overflow-hidden">
+				<div className="bg-cream mx-auto  shadow-lg overflow-hidden">
 					<div className="grid grid-cols-1 sm:grid-cols-3">
 						{/* Left column - Photo */}
-						<div className="relative h-64 sm:h-auto">
-							<Image
-								src="/LinkedinPP.jpg"
-								alt="Profile"
-								fill
-								className="object-contain"
-								priority
-							/>
+						<div className="relative h-64 sm:h-auto flex items-center justify-center">
+							<div className="relative w-64 h-64 border-2 border-raffia rounded-xl overflow-hidden">
+								<Image
+									src="/LinkedinPP.jpg"
+									alt="Profile"
+									fill
+									className="object-cover"
+									priority
+								/>
+							</div>
 						</div>
 
 						{/* Right column - Details */}
 						<div className="sm:col-span-2 p-8 flex flex-col justify-center">
-							<h3 className="text-3xl font-bold text-forest mb-6">Personal Info</h3>
+							<h3 className="text-3xl font-bold text-peru mb-6">Personal Info</h3>
 							<div>
 								<p className="text leading-relaxed text-gray-700">
 									Friendly and growth-oriented software engineer with a dynamic
@@ -42,21 +44,21 @@ export default function ProfileSection() {
 							</div>
 
 							<div className="mt-8">
-								<h4 className="text-xl font-semibold mb-4 text-forest">Contact</h4>
+								<h4 className="text-xl font-semibold mb-4 text-peru">Contact</h4>
 
 								<div className="grid grid-cols-1 sm:grid-cols-3 gap-5 text-sm text-gray-800">
 									{/* Location */}
 									<div className="flex items-center gap-3">
-										<MapPin className="text-forest w-5 h-5" />
+										<MapPin className="text-peru w-5 h-5" />
 										<span>Arncliffe, NSW</span>
 									</div>
 
 									{/* Email */}
 									<div className="flex items-center gap-3">
-										<Mail className="text-forest w-5 h-5" />
+										<Mail className="text-peru w-5 h-5" />
 										<a
 											href="mailto:yudhi_lee@hotmail.com"
-											className="hover:underline text-forest font-medium"
+											className="hover:underline text-peru font-medium"
 										>
 											yudhi_lee@hotmail.com
 										</a>
@@ -64,10 +66,10 @@ export default function ProfileSection() {
 
 									{/* Phone */}
 									<div className="flex items-center gap-3">
-										<Phone className="text-forest w-5 h-5" />
+										<Phone className="text-peru w-5 h-5" />
 										<a
 											href="tel:+61481160555"
-											className="hover:underline text-forest font-medium"
+											className="hover:underline text-peru font-medium"
 										>
 											(+61) 481-160-555
 										</a>
@@ -75,16 +77,16 @@ export default function ProfileSection() {
 
 									{/* Nationalities */}
 									<div className="flex items-center gap-3">
-										<Flag className="text-forest w-5 h-5" />
+										<Flag className="text-peru w-5 h-5" />
 										<span>Australian · Indonesian</span>
 									</div>
 
 									{/* Linkedin */}
 									<div className="flex items-center gap-3">
-										<Linkedin className="text-forest w-5 h-5" />
+										<Linkedin className="text-peru w-5 h-5" />
 										<a
 											href="https://www.linkedin.com/in/lionardus-pranoto87/"
-											className="hover:underline text-forest font-medium"
+											className="hover:underline text-peru font-medium"
 											target="_blank"
 										>
 											lionardus-pranoto87
@@ -93,10 +95,10 @@ export default function ProfileSection() {
 
 									{/* Github */}
 									<div className="flex items-center gap-3">
-										<Github className="text-forest w-5 h-5" />
+										<Github className="text-peru w-5 h-5" />
 										<a
 											href="https://github.com/lionardus87"
-											className="hover:underline text-forest font-medium"
+											className="hover:underline text-peru font-medium"
 											target="_blank"
 										>
 											lionardus87

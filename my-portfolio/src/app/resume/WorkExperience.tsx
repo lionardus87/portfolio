@@ -97,26 +97,26 @@ export default function WorkExperience() {
 	};
 
 	return (
-		<section className="py-12 bg-sand">
+		<section className="py-12 bg-cream">
 			<div className="max-w-8xl mx-auto px-6">
-				<h3 className="text-3xl font-bold text-center text-forest mb-12">
+				<h3 className="text-3xl font-bold text-center text-peru mb-12">
 					Education & Experience
 				</h3>
 
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left Column - Education */}
 					<div>
-						<h4 className="text-2xl font-semibold text-forest mb-8 text-center lg:text-left">
+						<h4 className="text-2xl font-semibold text-peru mb-8 text-center lg:text-left">
 							Education
 						</h4>
 						<div className="relative">
-							{/* <div className="absolute left-24 top-0 bottom-0 w-1 bg-forest/20"></div> */}
+							{/* <div className="absolute left-24 top-0 bottom-0 w-1 bg-peru/20"></div> */}
 							<div className="space-y-5">
 								{education.map((edu, index) => (
 									<div key={index} className="grid grid-cols-12 gap-6 items-start">
 										{/* Year */}
 										<div className="col-span-2 text-left">
-											<span className="inline-block bg-forest text-white text-sm px-3 py-1 rounded-full shadow">
+											<span className="inline-block bg-peru text-white text-sm px-3 py-1 rounded-full shadow">
 												{edu.year}
 											</span>
 										</div>
@@ -134,17 +134,17 @@ export default function WorkExperience() {
 
 					{/* Right Column - Work Experience */}
 					<div>
-						<h4 className="text-2xl font-semibold text-forest mb-8 text-center lg:text-left">
+						<h4 className="text-2xl font-semibold text-peru mb-8 text-center lg:text-left">
 							Experience
 						</h4>
 						<div className="relative">
-							{/* <div className="absolute left-24 top-0 bottom-0 w-1 bg-forest/20"></div> */}
+							{/* <div className="absolute left-24 top-0 bottom-0 w-1 bg-peru/20"></div> */}
 							<div className="space-y-5">
 								{jobs.map((job, index) => (
 									<div key={index} className="grid grid-cols-12 gap-6 items-start">
 										{/* Year */}
 										<div className="col-span-2 text-left">
-											<span className="inline-block bg-forest text-white text-sm px-3 py-1 rounded-full shadow">
+											<span className="inline-block bg-peru text-white text-sm px-3 py-1 rounded-full shadow">
 												{job.year}
 											</span>
 										</div>
@@ -154,7 +154,7 @@ export default function WorkExperience() {
 											<p className="text-grey text-sm mb-2">{job.role}</p>
 											<button
 												onClick={() => toggleDescription(index)}
-												className="text-forest text-xs underline hover:text-green-700 transition"
+												className="text-peru text-xs underline hover:text-green-700 transition"
 											>
 												{openIndex === index ? "Hide Details" : "Job Description"}
 											</button>

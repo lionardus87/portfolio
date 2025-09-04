@@ -26,9 +26,9 @@ export const skills = [
 export default function KeySkills() {
 	return (
 		<>
-			<section className="py-12 bg-sand">
+			<section className="py-12 bg-champagne">
 				<div className="mx-auto px-6">
-					<h3 className="text-3xl font-bold text-center text-forest mb-10">
+					<h3 className="text-3xl font-bold text-center text-peru mb-10">
 						Key Skills
 					</h3>
 					<div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-6">
@@ -37,7 +37,7 @@ export default function KeySkills() {
 								key={skill.category}
 								className="bg-cream p-6 rounded-xl shadow-md hover:shadow-lg transition"
 							>
-								<h4 className="text-lg font-semibold mb-3 text-forest">
+								<h4 className="text-lg font-semibold mb-3 text-peru">
 									{skill.category}
 								</h4>
 								<p className="text-sm text-gray-700">{skill.items}</p>
